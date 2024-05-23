@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        tr {
+            background-color: lightGrey;
+        }
+        
+        tr:nth-child(2n) {
+            background-color: grey;
+        }
+    </style>
+</head>
+
+<body>
+    <table></table>
+    <script>
+        function fetchData () {
+            fetch('https://script.google.com/macros/s/AKfycbx0XrfUTerRUAEuQd_UrN5FQ9JnqUUN2clsyFg_JNFYRSV-ItDIpQg0gpGxs5EF5hZz/exec')
+                .then(res => res.json())
+                .then(data => {
+                    let tr = data.content.reduce((prev, cur) => {
+                        let td = cur.map(e => `<td>${e}</td>`)
+                        return prev + `<tr>${td.join("")}</tr>`
+                    }, "\r")
+                    document.querySelector("table").innerHTML = tr;
+                    console.log(tr);
+                });
+            console.log("yeeep");
+        }
+        setInterval(fetchData,3000);
+    </script>
+</body>
+
+</html>
