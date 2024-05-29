@@ -10,18 +10,20 @@ body{
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	background-image: url("Group\ 2.png");
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 .container{
 	width: 500px;
 	padding: 30px;
-	border: 1px solid #eeeeee;
 	border-radius: 10px;
-	background-color: #003b5b;
+	background-color: #EFD395;
 }
 h4{
 	margin-bottom: 10px;
 	font-size: 24px;
-	color: white;
+	color: #2B3990;
 }
 input{
 	width: 100%;
@@ -34,7 +36,7 @@ textarea{
 }
 #submit{
 	border: none;
-	background-color: orangered;
+	background-color: #2B3990;
 	color: white;
 	width: 200px;
 	margin-top: 10px;
@@ -42,4 +44,8 @@ textarea{
 }
 #submit:hover{
 	background-color: #333333;
+}
+
+.contest-ttl {
+	text-align: center;
 }

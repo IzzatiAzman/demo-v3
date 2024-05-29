@@ -7,34 +7,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+
+        body {
+            background-image: url("Group\ 2.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
         tr {
             background-color: lightGrey;
+            
+        }
+
+        td {
+            padding: 3px 7px;
+            font-size: 18px;
+        }
+
+        tr:nth-child(1) {
+            background-color: #FDDD2A;
+            color: white;
+            font-weight: bold;
+            font-size: 24px;
+            text-transform: uppercase;
         }
         
         tr:nth-child(2n) {
             background-color: grey;
         }
+
+        .main-cont {
+            padding: 50px 70px 50px 70px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .leaderboard-ttl {
+            text-align: center;
+            padding-bottom: 40px;
+            font-size: 32px;
+            font-weight: bold;
+        }
     </style>
 </head>
 
 <body>
+    <div class="main-cont">
+    <div class="leaderboard-ttl">Leaderboard</div>
     <table></table>
     <script>
         function fetchData () {
             fetch('https://script.google.com/macros/s/AKfycbx0XrfUTerRUAEuQd_UrN5FQ9JnqUUN2clsyFg_JNFYRSV-ItDIpQg0gpGxs5EF5hZz/exec')
                 .then(res => res.json())
                 .then(data => {
+                    let sortedData = data.content;
+                    sortedData.sort((a, b) => b[1] - a[1]);
                     let tr = data.content.reduce((prev, cur) => {
                         let td = cur.map(e => `<td>${e}</td>`)
                         return prev + `<tr>${td.join("")}</tr>`
                     }, "\r")
                     document.querySelector("table").innerHTML = tr;
-                    console.log(tr);
+                    console.log(sortedData);
                 });
-            console.log("yeeep");
         }
         setInterval(fetchData,3000);
     </script>
+    </div>
 </body>
 
 </html>
