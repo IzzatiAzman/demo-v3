@@ -193,7 +193,7 @@ for (var i = 0, k = 0, l = gdjs.BonusCode.GDJumpButtonObjects3.length;i<l;++i) {
 gdjs.BonusCode.GDJumpButtonObjects3.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(17591180);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(19837684);
 }
 }
 if (isConditionTrue_0) {
@@ -222,7 +222,7 @@ for (var i = 0, k = 0, l = gdjs.BonusCode.GDJumpButtonObjects2.length;i<l;++i) {
 gdjs.BonusCode.GDJumpButtonObjects2.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(19205468);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(19786508);
 }
 }
 if (isConditionTrue_0) {
@@ -299,7 +299,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "Space");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(19434284);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(19847396);
 }
 }
 if (isConditionTrue_0) {
@@ -331,7 +331,7 @@ for (var i = 0, k = 0, l = gdjs.BonusCode.GDPlayerObjects3.length;i<l;++i) {
 gdjs.BonusCode.GDPlayerObjects3.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(17469796);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(19841676);
 }
 }
 if (isConditionTrue_0) {
@@ -349,7 +349,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "Space");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(10112580);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(19842300);
 }
 }
 if (isConditionTrue_0) {
@@ -379,7 +379,7 @@ for (var i = 0, k = 0, l = gdjs.BonusCode.GDPlayerObjects3.length;i<l;++i) {
 gdjs.BonusCode.GDPlayerObjects3.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(21073340);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(19843780);
 }
 }
 if (isConditionTrue_0) {
@@ -1108,7 +1108,7 @@ gdjs.BonusCode.eventsList17 = function(runtimeScene) {
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(14918108);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(19873068);
 }
 if (isConditionTrue_0) {
 
@@ -1162,7 +1162,7 @@ for(var i = 0, len = gdjs.BonusCode.GDRetryButtonObjects2.length ;i < len;++i) {
     gdjs.BonusCode.GDRetryButtonObjects2[i].setCenterXInScene(gdjs.evtTools.camera.getCameraX(runtimeScene, "EndScreen", 0));
 }
 }{for(var i = 0, len = gdjs.BonusCode.GDMain_9595MenuObjects2.length ;i < len;++i) {
-    gdjs.BonusCode.GDMain_9595MenuObjects2[i].setCenterXInScene(gdjs.evtTools.window.getGameResolutionWidth(runtimeScene) * 2.5 / 4);
+    gdjs.BonusCode.GDMain_9595MenuObjects2[i].setCenterXInScene(gdjs.evtTools.window.getGameResolutionWidth(runtimeScene) / 2);
 }
 }{for(var i = 0, len = gdjs.BonusCode.GDRetryButtonObjects2.length ;i < len;++i) {
     gdjs.BonusCode.GDRetryButtonObjects2[i].setCenterXInScene(gdjs.evtTools.window.getGameResolutionWidth(runtimeScene) / 4);
@@ -1318,7 +1318,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.BonusCode.mapOfGDgdjs_9546BonusCode_9546GDPlayerObjects2Objects, gdjs.BonusCode.mapOfGDgdjs_9546BonusCode_9546GDPortalObjects2Objects, false, runtimeScene, false);
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(19439636);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(19870236);
 }
 }
 if (isConditionTrue_0) {
@@ -1410,6 +1410,20 @@ gdjs.copyArray(runtimeScene.getObjects("TopBoundary"), gdjs.BonusCode.GDTopBound
 
 
 };gdjs.BonusCode.eventsList21 = function(runtimeScene) {
+
+{
+
+
+let isConditionTrue_0 = false;
+{
+gdjs.copyArray(runtimeScene.getObjects("Timer"), gdjs.BonusCode.GDTimerObjects3);
+{for(var i = 0, len = gdjs.BonusCode.GDTimerObjects3.length ;i < len;++i) {
+    gdjs.BonusCode.GDTimerObjects3[i].setCenterXInScene(gdjs.evtTools.window.getGameResolutionWidth(runtimeScene) / 2);
+}
+}}
+
+}
+
 
 {
 

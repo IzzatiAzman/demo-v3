@@ -3,6 +3,8 @@ gdjs.Smokey_32ControlCode.GDControlObjects1= [];
 gdjs.Smokey_32ControlCode.GDControlObjects2= [];
 gdjs.Smokey_32ControlCode.GDNextObjects1= [];
 gdjs.Smokey_32ControlCode.GDNextObjects2= [];
+gdjs.Smokey_32ControlCode.GDbackObjects1= [];
+gdjs.Smokey_32ControlCode.GDbackObjects2= [];
 gdjs.Smokey_32ControlCode.GDplayer_9595inputObjects1= [];
 gdjs.Smokey_32ControlCode.GDplayer_9595inputObjects2= [];
 gdjs.Smokey_32ControlCode.GDnamenameObjects1= [];
@@ -50,6 +52,27 @@ gdjs.copyArray(runtimeScene.getObjects("Next"), gdjs.Smokey_32ControlCode.GDNext
 }
 
 
+{
+
+gdjs.copyArray(runtimeScene.getObjects("back"), gdjs.Smokey_32ControlCode.GDbackObjects1);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.Smokey_32ControlCode.GDbackObjects1.length;i<l;++i) {
+    if ( gdjs.Smokey_32ControlCode.GDbackObjects1[i].IsClicked((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
+        isConditionTrue_0 = true;
+        gdjs.Smokey_32ControlCode.GDbackObjects1[k] = gdjs.Smokey_32ControlCode.GDbackObjects1[i];
+        ++k;
+    }
+}
+gdjs.Smokey_32ControlCode.GDbackObjects1.length = k;
+if (isConditionTrue_0) {
+{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Menu", false);
+}}
+
+}
+
+
 };
 
 gdjs.Smokey_32ControlCode.func = function(runtimeScene) {
@@ -59,6 +82,8 @@ gdjs.Smokey_32ControlCode.GDControlObjects1.length = 0;
 gdjs.Smokey_32ControlCode.GDControlObjects2.length = 0;
 gdjs.Smokey_32ControlCode.GDNextObjects1.length = 0;
 gdjs.Smokey_32ControlCode.GDNextObjects2.length = 0;
+gdjs.Smokey_32ControlCode.GDbackObjects1.length = 0;
+gdjs.Smokey_32ControlCode.GDbackObjects2.length = 0;
 gdjs.Smokey_32ControlCode.GDplayer_9595inputObjects1.length = 0;
 gdjs.Smokey_32ControlCode.GDplayer_9595inputObjects2.length = 0;
 gdjs.Smokey_32ControlCode.GDnamenameObjects1.length = 0;

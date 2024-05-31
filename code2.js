@@ -35,12 +35,19 @@ gdjs.MenuCode.GDTempFrameObjects1= [];
 gdjs.MenuCode.GDTempFrameObjects2= [];
 gdjs.MenuCode.GDSpeedmartFrameObjects1= [];
 gdjs.MenuCode.GDSpeedmartFrameObjects2= [];
+gdjs.MenuCode.GDbackObjects1= [];
+gdjs.MenuCode.GDbackObjects2= [];
 gdjs.MenuCode.GDplayer_9595inputObjects1= [];
 gdjs.MenuCode.GDplayer_9595inputObjects2= [];
 gdjs.MenuCode.GDnamenameObjects1= [];
 gdjs.MenuCode.GDnamenameObjects2= [];
 
 
+gdjs.MenuCode.mapOfGDgdjs_9546MenuCode_9546GDbuttermilk_95959595vidObjects1Objects = Hashtable.newFrom({"buttermilk_vid": gdjs.MenuCode.GDbuttermilk_9595vidObjects1});
+gdjs.MenuCode.mapOfGDgdjs_9546MenuCode_9546GDsmokey_95959595vidObjects1Objects = Hashtable.newFrom({"smokey_vid": gdjs.MenuCode.GDsmokey_9595vidObjects1});
+gdjs.MenuCode.mapOfGDgdjs_9546MenuCode_9546GDtempura_95959595vidObjects1Objects = Hashtable.newFrom({"tempura_vid": gdjs.MenuCode.GDtempura_9595vidObjects1});
+gdjs.MenuCode.mapOfGDgdjs_9546MenuCode_9546GD_9595959599SpeedObjects1Objects = Hashtable.newFrom({"_99Speed": gdjs.MenuCode.GD_959599SpeedObjects1});
+gdjs.MenuCode.mapOfGDgdjs_9546MenuCode_9546GDbackObjects1Objects = Hashtable.newFrom({"back": gdjs.MenuCode.GDbackObjects1});
 gdjs.MenuCode.eventsList0 = function(runtimeScene) {
 
 {
@@ -57,6 +64,20 @@ for (var i = 0, k = 0, l = gdjs.MenuCode.GDButtermilkObjects1.length;i<l;++i) {
     }
 }
 gdjs.MenuCode.GDButtermilkObjects1.length = k;
+if (isConditionTrue_0) {
+{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Buttermilk Control", false);
+}}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("buttermilk_vid"), gdjs.MenuCode.GDbuttermilk_9595vidObjects1);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.cursorOnObject(gdjs.MenuCode.mapOfGDgdjs_9546MenuCode_9546GDbuttermilk_95959595vidObjects1Objects, runtimeScene, true, false);
 if (isConditionTrue_0) {
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Buttermilk Control", false);
 }}
@@ -87,6 +108,20 @@ if (isConditionTrue_0) {
 
 {
 
+gdjs.copyArray(runtimeScene.getObjects("smokey_vid"), gdjs.MenuCode.GDsmokey_9595vidObjects1);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.cursorOnObject(gdjs.MenuCode.mapOfGDgdjs_9546MenuCode_9546GDsmokey_95959595vidObjects1Objects, runtimeScene, true, false);
+if (isConditionTrue_0) {
+{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Smokey Control", false);
+}}
+
+}
+
+
+{
+
 gdjs.copyArray(runtimeScene.getObjects("Tempura"), gdjs.MenuCode.GDTempuraObjects1);
 
 let isConditionTrue_0 = false;
@@ -108,6 +143,20 @@ if (isConditionTrue_0) {
 
 {
 
+gdjs.copyArray(runtimeScene.getObjects("tempura_vid"), gdjs.MenuCode.GDtempura_9595vidObjects1);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.cursorOnObject(gdjs.MenuCode.mapOfGDgdjs_9546MenuCode_9546GDtempura_95959595vidObjects1Objects, runtimeScene, true, false);
+if (isConditionTrue_0) {
+{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Tempura Control", false);
+}}
+
+}
+
+
+{
+
 gdjs.copyArray(runtimeScene.getObjects("_99Speed2"), gdjs.MenuCode.GD_959599Speed2Objects1);
 
 let isConditionTrue_0 = false;
@@ -120,6 +169,20 @@ for (var i = 0, k = 0, l = gdjs.MenuCode.GD_959599Speed2Objects1.length;i<l;++i)
     }
 }
 gdjs.MenuCode.GD_959599Speed2Objects1.length = k;
+if (isConditionTrue_0) {
+{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "BBQ Control", false);
+}}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("_99Speed"), gdjs.MenuCode.GD_959599SpeedObjects1);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.cursorOnObject(gdjs.MenuCode.mapOfGDgdjs_9546MenuCode_9546GD_9595959599SpeedObjects1Objects, runtimeScene, true, false);
 if (isConditionTrue_0) {
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "BBQ Control", false);
 }}
@@ -221,6 +284,20 @@ gdjs.copyArray(runtimeScene.getObjects("tempura_vid"), gdjs.MenuCode.GDtempura_9
 }
 
 
+{
+
+gdjs.copyArray(runtimeScene.getObjects("back"), gdjs.MenuCode.GDbackObjects1);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.cursorOnObject(gdjs.MenuCode.mapOfGDgdjs_9546MenuCode_9546GDbackObjects1Objects, runtimeScene, true, false);
+if (isConditionTrue_0) {
+{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Name Scene", false);
+}}
+
+}
+
+
 };
 
 gdjs.MenuCode.func = function(runtimeScene) {
@@ -262,6 +339,8 @@ gdjs.MenuCode.GDTempFrameObjects1.length = 0;
 gdjs.MenuCode.GDTempFrameObjects2.length = 0;
 gdjs.MenuCode.GDSpeedmartFrameObjects1.length = 0;
 gdjs.MenuCode.GDSpeedmartFrameObjects2.length = 0;
+gdjs.MenuCode.GDbackObjects1.length = 0;
+gdjs.MenuCode.GDbackObjects2.length = 0;
 gdjs.MenuCode.GDplayer_9595inputObjects1.length = 0;
 gdjs.MenuCode.GDplayer_9595inputObjects2.length = 0;
 gdjs.MenuCode.GDnamenameObjects1.length = 0;

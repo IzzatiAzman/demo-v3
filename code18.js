@@ -5,7 +5,7 @@ gdjs.portraitCode.GDnamenameObjects1= [];
 gdjs.portraitCode.GDnamenameObjects2= [];
 
 
-gdjs.portraitCode.userFunc0x144a0d0 = function GDJSInlineCode(runtimeScene) {
+gdjs.portraitCode.userFunc0x10a2df0 = function GDJSInlineCode(runtimeScene) {
 "use strict";
 if (window.orientation == 90 || window.orientation == -90) {
     gdjs.landscape = true //set default
@@ -35,7 +35,7 @@ let isConditionTrue_0 = false;
 {
 
 
-gdjs.portraitCode.userFunc0x144a0d0(runtimeScene);
+gdjs.portraitCode.userFunc0x10a2df0(runtimeScene);
 
 }
 
