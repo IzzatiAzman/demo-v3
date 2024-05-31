@@ -1156,7 +1156,8 @@ for (var i = 0, k = 0, l = gdjs.Level2Code.GDMain_9595MenuObjects2.length;i<l;++
 }
 gdjs.Level2Code.GDMain_9595MenuObjects2.length = k;
 if (isConditionTrue_0) {
-{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Menu", false);
+{gdjs.evtTools.sound.playSound(runtimeScene, "923517cfc7f1500e851f0bbcdd357fe2b982745b128fcb3acc40d1a229575882_Click_02.aac", false, 70, 1);
+}{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Menu", false);
 }}
 
 }
@@ -1177,7 +1178,8 @@ for (var i = 0, k = 0, l = gdjs.Level2Code.GDLeaderboardObjects1.length;i<l;++i)
 }
 gdjs.Level2Code.GDLeaderboardObjects1.length = k;
 if (isConditionTrue_0) {
-{gdjs.evtTools.firebaseTools.firestore.addDocument("Leaderboard", runtimeScene.getScene().getVariables().get("User"), gdjs.VariablesContainer.badVariable);
+{gdjs.evtTools.sound.playSound(runtimeScene, "923517cfc7f1500e851f0bbcdd357fe2b982745b128fcb3acc40d1a229575882_Click_02.aac", false, 70, 1);
+}{gdjs.evtTools.firebaseTools.firestore.addDocument("Leaderboard", runtimeScene.getScene().getVariables().get("User"), gdjs.VariablesContainer.badVariable);
 }{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Leaderboard", false);
 }}
 

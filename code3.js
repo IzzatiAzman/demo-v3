@@ -28,7 +28,8 @@ for (var i = 0, k = 0, l = gdjs.Buttermilk_32ControlCode.GDNextObjects1.length;i
 }
 gdjs.Buttermilk_32ControlCode.GDNextObjects1.length = k;
 if (isConditionTrue_0) {
-{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Buttermilk Intro", false);
+{gdjs.evtTools.sound.playSound(runtimeScene, "923517cfc7f1500e851f0bbcdd357fe2b982745b128fcb3acc40d1a229575882_Click_02.aac", false, 70, 1);
+}{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Buttermilk Intro", false);
 }}
 
 }
@@ -67,7 +68,21 @@ for (var i = 0, k = 0, l = gdjs.Buttermilk_32ControlCode.GDbackObjects1.length;i
 }
 gdjs.Buttermilk_32ControlCode.GDbackObjects1.length = k;
 if (isConditionTrue_0) {
-{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Menu", false);
+{gdjs.evtTools.sound.playSound(runtimeScene, "923517cfc7f1500e851f0bbcdd357fe2b982745b128fcb3acc40d1a229575882_Click_02.aac", false, 70, 1);
+}{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Menu", false);
+}}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
+if (isConditionTrue_0) {
+{gdjs.evtTools.sound.playSound(runtimeScene, "775a79b3d3e7bcccf78c92e4a559d328630b2a029a20ad03127f3ca56e453972_Energizing.aac", true, 70, 1);
 }}
 
 }

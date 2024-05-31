@@ -30,7 +30,8 @@ for (var i = 0, k = 0, l = gdjs.Name_32SceneCode.GDplay_9595btnObjects1.length;i
 }
 gdjs.Name_32SceneCode.GDplay_9595btnObjects1.length = k;
 if (isConditionTrue_0) {
-{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Menu", false);
+{gdjs.evtTools.sound.playSound(runtimeScene, "923517cfc7f1500e851f0bbcdd357fe2b982745b128fcb3acc40d1a229575882_Click_02.aac", false, 70, 1);
+}{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Menu", false);
 }}
 
 }
@@ -78,6 +79,19 @@ gdjs.copyArray(runtimeScene.getObjects("player_input"), gdjs.Name_32SceneCode.GD
 }{for(var i = 0, len = gdjs.Name_32SceneCode.GDnameBgObjects1.length ;i < len;++i) {
     gdjs.Name_32SceneCode.GDnameBgObjects1[i].setCenterXInScene(gdjs.evtTools.window.getGameResolutionWidth(runtimeScene) / 2);
 }
+}}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
+if (isConditionTrue_0) {
+{gdjs.evtTools.sound.playSound(runtimeScene, "72e9c7d27d07ead77a928dacdf3947412c9aa607e22b3a94d26fa7f9412224ee_01 - super mushroom eater revised and fixed.aac", true, 70, 1);
 }}
 
 }
