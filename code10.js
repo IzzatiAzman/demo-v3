@@ -81,7 +81,7 @@ gdjs.copyArray(runtimeScene.getObjects("instructions"), gdjs.BBQ_32IntroCode.GDi
     gdjs.BBQ_32IntroCode.GDinstructionsObjects1[i].setCenterXInScene(gdjs.evtTools.window.getGameResolutionWidth(runtimeScene) / 2);
 }
 }{for(var i = 0, len = gdjs.BBQ_32IntroCode.GDStartObjects1.length ;i < len;++i) {
-    gdjs.BBQ_32IntroCode.GDStartObjects1[i].setCenterXInScene(gdjs.evtTools.window.getGameResolutionWidth(runtimeScene) * 2 / 3);
+    gdjs.BBQ_32IntroCode.GDStartObjects1[i].setCenterXInScene(gdjs.evtTools.window.getGameResolutionWidth(runtimeScene) * 0.645);
 }
 }}
 

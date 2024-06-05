@@ -81,7 +81,7 @@ gdjs.copyArray(runtimeScene.getObjects("instructions"), gdjs.Smokey_32IntroCode.
     gdjs.Smokey_32IntroCode.GDinstructionsObjects1[i].setCenterXInScene(gdjs.evtTools.window.getGameResolutionWidth(runtimeScene) / 2);
 }
 }{for(var i = 0, len = gdjs.Smokey_32IntroCode.GDStartObjects1.length ;i < len;++i) {
-    gdjs.Smokey_32IntroCode.GDStartObjects1[i].setCenterXInScene(gdjs.evtTools.window.getGameResolutionWidth(runtimeScene) * 2 / 3);
+    gdjs.Smokey_32IntroCode.GDStartObjects1[i].setCenterXInScene(gdjs.evtTools.window.getGameResolutionWidth(runtimeScene) * 0.645);
 }
 }}
 

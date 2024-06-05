@@ -43,7 +43,7 @@ let isConditionTrue_0 = false;
 gdjs.copyArray(runtimeScene.getObjects("Control"), gdjs.Smokey_32ControlCode.GDControlObjects1);
 gdjs.copyArray(runtimeScene.getObjects("Next"), gdjs.Smokey_32ControlCode.GDNextObjects1);
 {for(var i = 0, len = gdjs.Smokey_32ControlCode.GDNextObjects1.length ;i < len;++i) {
-    gdjs.Smokey_32ControlCode.GDNextObjects1[i].setCenterXInScene(gdjs.evtTools.window.getGameResolutionWidth(runtimeScene) * 2.1 / 3);
+    gdjs.Smokey_32ControlCode.GDNextObjects1[i].setCenterXInScene(gdjs.evtTools.window.getGameResolutionWidth(runtimeScene) * 0.645);
 }
 }{for(var i = 0, len = gdjs.Smokey_32ControlCode.GDControlObjects1.length ;i < len;++i) {
     gdjs.Smokey_32ControlCode.GDControlObjects1[i].setCenterXInScene(gdjs.evtTools.window.getGameResolutionWidth(runtimeScene) / 2);

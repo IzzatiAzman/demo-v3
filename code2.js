@@ -51,7 +51,6 @@ gdjs.MenuCode.GDnamenameObjects1= [];
 gdjs.MenuCode.GDnamenameObjects2= [];
 
 
-gdjs.MenuCode.mapOfGDgdjs_9546MenuCode_9546GDbackObjects1Objects = Hashtable.newFrom({"back": gdjs.MenuCode.GDbackObjects1});
 gdjs.MenuCode.eventsList0 = function(runtimeScene) {
 
 {
@@ -331,7 +330,14 @@ gdjs.copyArray(runtimeScene.getObjects("back"), gdjs.MenuCode.GDbackObjects1);
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.input.cursorOnObject(gdjs.MenuCode.mapOfGDgdjs_9546MenuCode_9546GDbackObjects1Objects, runtimeScene, true, false);
+for (var i = 0, k = 0, l = gdjs.MenuCode.GDbackObjects1.length;i<l;++i) {
+    if ( gdjs.MenuCode.GDbackObjects1[i].IsClicked((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
+        isConditionTrue_0 = true;
+        gdjs.MenuCode.GDbackObjects1[k] = gdjs.MenuCode.GDbackObjects1[i];
+        ++k;
+    }
+}
+gdjs.MenuCode.GDbackObjects1.length = k;
 if (isConditionTrue_0) {
 {gdjs.evtTools.sound.playSound(runtimeScene, "923517cfc7f1500e851f0bbcdd357fe2b982745b128fcb3acc40d1a229575882_Click_02.aac", false, 70, 1);
 }{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Name Scene", false);

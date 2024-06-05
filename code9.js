@@ -43,7 +43,7 @@ let isConditionTrue_0 = false;
 gdjs.copyArray(runtimeScene.getObjects("Control"), gdjs.BBQ_32ControlCode.GDControlObjects1);
 gdjs.copyArray(runtimeScene.getObjects("Next"), gdjs.BBQ_32ControlCode.GDNextObjects1);
 {for(var i = 0, len = gdjs.BBQ_32ControlCode.GDNextObjects1.length ;i < len;++i) {
-    gdjs.BBQ_32ControlCode.GDNextObjects1[i].setCenterXInScene(gdjs.evtTools.window.getGameResolutionWidth(runtimeScene) * 2 / 3);
+    gdjs.BBQ_32ControlCode.GDNextObjects1[i].setCenterXInScene(gdjs.evtTools.window.getGameResolutionWidth(runtimeScene) * 0.645);
 }
 }{for(var i = 0, len = gdjs.BBQ_32ControlCode.GDControlObjects1.length ;i < len;++i) {
     gdjs.BBQ_32ControlCode.GDControlObjects1[i].setCenterXInScene(gdjs.evtTools.window.getGameResolutionWidth(runtimeScene) / 2);
