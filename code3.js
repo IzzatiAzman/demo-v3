@@ -42,8 +42,12 @@ let isConditionTrue_0 = false;
 {
 gdjs.copyArray(runtimeScene.getObjects("Control"), gdjs.Buttermilk_32ControlCode.GDControlObjects1);
 gdjs.copyArray(runtimeScene.getObjects("Next"), gdjs.Buttermilk_32ControlCode.GDNextObjects1);
+gdjs.copyArray(runtimeScene.getObjects("back"), gdjs.Buttermilk_32ControlCode.GDbackObjects1);
 {for(var i = 0, len = gdjs.Buttermilk_32ControlCode.GDNextObjects1.length ;i < len;++i) {
     gdjs.Buttermilk_32ControlCode.GDNextObjects1[i].setCenterXInScene(gdjs.evtTools.window.getGameResolutionWidth(runtimeScene) * 0.645);
+}
+}{for(var i = 0, len = gdjs.Buttermilk_32ControlCode.GDbackObjects1.length ;i < len;++i) {
+    gdjs.Buttermilk_32ControlCode.GDbackObjects1[i].setCenterXInScene(gdjs.evtTools.window.getGameResolutionWidth(runtimeScene) * 0.1);
 }
 }{for(var i = 0, len = gdjs.Buttermilk_32ControlCode.GDControlObjects1.length ;i < len;++i) {
     gdjs.Buttermilk_32ControlCode.GDControlObjects1[i].setCenterXInScene(gdjs.evtTools.window.getGameResolutionWidth(runtimeScene) / 2);

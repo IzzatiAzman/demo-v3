@@ -244,6 +244,7 @@ gdjs.copyArray(runtimeScene.getObjects("Tempura"), gdjs.MenuCode.GDTempuraObject
 gdjs.copyArray(runtimeScene.getObjects("Title"), gdjs.MenuCode.GDTitleObjects1);
 gdjs.copyArray(runtimeScene.getObjects("_99Speed"), gdjs.MenuCode.GD_959599SpeedObjects1);
 gdjs.copyArray(runtimeScene.getObjects("_99Speed2"), gdjs.MenuCode.GD_959599Speed2Objects1);
+gdjs.copyArray(runtimeScene.getObjects("back"), gdjs.MenuCode.GDbackObjects1);
 gdjs.copyArray(runtimeScene.getObjects("background"), gdjs.MenuCode.GDbackgroundObjects1);
 gdjs.copyArray(runtimeScene.getObjects("buttermilk_vid"), gdjs.MenuCode.GDbuttermilk_9595vidObjects1);
 gdjs.copyArray(runtimeScene.getObjects("smokey_vid"), gdjs.MenuCode.GDsmokey_9595vidObjects1);
@@ -289,6 +290,9 @@ gdjs.copyArray(runtimeScene.getObjects("tempura_vid"), gdjs.MenuCode.GDtempura_9
 }
 }{for(var i = 0, len = gdjs.MenuCode.GDSP99redirectObjects1.length ;i < len;++i) {
     gdjs.MenuCode.GDSP99redirectObjects1[i].setCenterXInScene(gdjs.evtTools.window.getGameResolutionWidth(runtimeScene) / 2);
+}
+}{for(var i = 0, len = gdjs.MenuCode.GDbackObjects1.length ;i < len;++i) {
+    gdjs.MenuCode.GDbackObjects1[i].setCenterXInScene(gdjs.evtTools.window.getGameResolutionWidth(runtimeScene) * 0.1);
 }
 }}
 

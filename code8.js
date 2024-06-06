@@ -75,9 +75,13 @@ if (isConditionTrue_0) {
 
 let isConditionTrue_0 = false;
 {
+gdjs.copyArray(runtimeScene.getObjects("Back"), gdjs.Tempura_32IntroCode.GDBackObjects1);
 gdjs.copyArray(runtimeScene.getObjects("Start"), gdjs.Tempura_32IntroCode.GDStartObjects1);
 gdjs.copyArray(runtimeScene.getObjects("instructions"), gdjs.Tempura_32IntroCode.GDinstructionsObjects1);
-{for(var i = 0, len = gdjs.Tempura_32IntroCode.GDinstructionsObjects1.length ;i < len;++i) {
+{for(var i = 0, len = gdjs.Tempura_32IntroCode.GDBackObjects1.length ;i < len;++i) {
+    gdjs.Tempura_32IntroCode.GDBackObjects1[i].setCenterXInScene(gdjs.evtTools.window.getGameResolutionWidth(runtimeScene) * 0.1);
+}
+}{for(var i = 0, len = gdjs.Tempura_32IntroCode.GDinstructionsObjects1.length ;i < len;++i) {
     gdjs.Tempura_32IntroCode.GDinstructionsObjects1[i].setCenterXInScene(gdjs.evtTools.window.getGameResolutionWidth(runtimeScene) / 2);
 }
 }{for(var i = 0, len = gdjs.Tempura_32IntroCode.GDStartObjects1.length ;i < len;++i) {
